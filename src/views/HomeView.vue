@@ -10,6 +10,7 @@
 
       </v-container>
     </v-card>
+    
     <v-card class="ma-5 pa-5" v-for="item in customer">
       <a>
         <b>Name : </b> {{ item.name }} <br />
@@ -17,6 +18,7 @@
         <b>Cost : </b> {{ item.cost }} <br />
       </a>
     </v-card>
+
 
 
     <v-dialog v-model="dialogAdd"  max-width="600px">
@@ -66,7 +68,10 @@
         <b>Massager : </b> {{ item.demand }} <br />
         <b>Cost : </b> {{ item.cost }} <br />
       </a>
+      
           </v-card>
+    <h1>This Round Cost : {{result.cost}}</h1>
+
 
           </v-container>
         </v-card-text>

@@ -6,7 +6,7 @@ export const store_pinia = defineStore({
     val:[100,50,200] ,
     wt: [3,4,2],
     W: 8,
-    result :'',
+    result :[],
     items :[],
     servicecustomer : [],
   }),
@@ -35,7 +35,7 @@ export const store_pinia = defineStore({
     },
 
     setResult(res){
-      this.result = res;
+      this.result.push(res);
     },
 
     setSelectItem(item){
